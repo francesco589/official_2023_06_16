@@ -1,0 +1,46 @@
+<!--Ex 1
+Creare 3 campi input:
+- il primo, stabilisce un colore di sfondo
+- il secondo, stabilisce un colore di testo
+- il terzo, stabilisce un contenuto
+e un pulsante con testo "crea".
+Al click sul pulsante, viene creato un div 200px x 200px che avrà sfondo, colore del testo e
+contenuto dettati dagli input digitati, come sopra descritto.
+Ogni volta che viene premuto il pulsante "crea" l'elemento creato viene aggiunto al precedente.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <div class="flex">
+            <input id="col-back" type="text" placeholder="colore di sfondo">
+            <input id="col-text" type="text" placeholder="colore del carattere">
+            <input id="content" type="text" placeholder="scrivi il contenuto">
+        </div>
+        <button id="button">Create</button>
+    </section>
+    <script>
+        function $(id){
+            document.getElementById(id)
+        }
+        const backgr = $("col-back")
+        const text = $("col-text")
+        const conten = $("content")
+        const btn = $("button")
+
+        btn.addEventListener("click", () => {
+            
+        
+      });
+        console.log(conten)
+
+    </script>
+</body>
+</html>

@@ -251,12 +251,13 @@ function opeStringa(str, fn){
 return fn(str)
 }
 console.log(opeStringa("javascript", str => str.toUpperCase()))
-console.log(opeStringa("javascript", str => {
-    let newS = ""
-    for(let i = 0; i < str.length; i++){
-        if(i % 2 > 0 ){
-            newS += str[i]
-        }
-        return newS
-    }})
+// console.log(opeStringa("javascript", str => {
+//     let newS = ""
+//     for(let i = 0; i < str.length; i++){
+//         if(i % 2 > 0 ){
+//             newS += str[i]
+//         }
+//         return newS
+//     }})
 }
+
