@@ -25,6 +25,7 @@ Ogni volta che viene premuto il pulsante "crea" l'elemento creato viene aggiunto
             <input id="content" type="text" placeholder="scrivi il contenuto">
         </div>
         <button id="button">Create</button>
+        <div id="result"></div>
     </section>
     <script>
         function $(id){
@@ -34,12 +35,16 @@ Ogni volta che viene premuto il pulsante "crea" l'elemento creato viene aggiunto
         const text = $("col-text")
         const conten = $("content")
         const btn = $("button")
+        const res = $("result")
 
         btn.addEventListener("click", () => {
-            
-        
+           let div = document.createElement("div")
+            div.innerHTML = conten.value
+            div.classList.add(backgr.value)
+            div.classList.add(text.value)
+            div.appendChild(res)
       });
-        console.log(conten)
+      
 
     </script>
 </body>
